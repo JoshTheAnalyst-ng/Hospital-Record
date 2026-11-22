@@ -1,0 +1,201 @@
+patient_id,first_name,last_name,gender,birth_date,city,province_id,allergies,height,weight
+1,Jack,Novak,M,1993-01-23,Kingston,ON,,178,80
+2,Anna,Turner,F,1979-01-15,Kingston,ON,Ibuprofen,163,49
+3,Raj,Smith,M,1996-06-20,Laval,QC,,169,78
+4,Mei,King,F,1941-11-05,Laval,QC,,162,62
+5,Olivia,Ahmed,F,1967-08-13,Brandon,MB,,160,68
+6,Leah,Baker,F,1988-11-04,Gatineau,QC,,167,61
+7,Leah,Murphy,F,1986-08-19,Kingston,ON,,163,77
+8,Kwame,Rossi,M,2008-02-19,Kelowna,BC,,148,52
+9,Anna,Hassan,F,1962-08-07,Victoria,BC,,154,56
+10,Laura,Smith,F,2017-09-15,Edmonton,AB,Latex,97,20
+11,Hailey,Garcia,F,1979-08-08,Regina,SK,Sulfa,165,53
+12,Leah,Singh,F,1951-06-04,Montreal,QC,,174,72
+13,Amara,MacDonald,F,1971-11-25,London,ON,,171,105
+14,Matthew,Clark,M,2004-01-01,Kelowna,BC,Penicillin,184,59
+15,Hailey,Gauthier,F,1947-02-06,Kingston,ON,,156,59
+16,Isabella,Okafor,F,1947-02-22,London,ON,ASA,165,48
+17,Marcus,Smith,M,1969-12-06,Hamilton,ON,,177,81
+18,Liam,Novak,M,1996-04-03,London,ON,,173,93
+19,Jacob,Lavoie,M,1973-11-25,Toronto,ON,,170,67
+20,Matthew,Bergeron,M,1939-01-22,Ottawa,ON,,166,50
+21,Ethan,Bergeron,M,1981-05-15,Vancouver,BC,Morphine,179,81
+22,Isabella,Khan,F,1965-11-13,Iqaluit,NU,Codeine,166,87
+23,Abigail,Rossi,F,1982-04-20,Calgary,AB,Penicillin,166,48
+24,Priya,Okafor,F,1995-02-22,Edmonton,AB,,163,72
+25,Henry,Pelletier,M,1984-11-11,Laval,QC,,176,60
+26,Lucas,Hughes,M,1974-02-13,Red Deer,AB,,181,109
+27,Antoine,Li,M,1940-09-25,Toronto,ON,Shellfish,174,94
+28,Emma,Martin,F,2003-07-08,Kingston,ON,,157,47
+29,Maya,Reid,F,1991-02-19,Sydney,NS,,158,49
+30,Juliette,Leblanc,F,1996-08-02,Corner Brook,NL,Pollen,158,77
+31,Kwame,Sharma,M,2018-08-05,Vancouver,BC,Morphine,71,8
+32,Olivia,Fraser,F,1952-09-17,Kingston,ON,Penicillin,154,54
+33,Felix,Kim,M,1993-11-01,London,ON,Peanuts,173,95
+34,Ella,Reid,F,2015-03-06,Kelowna,BC,,103,30
+35,Sarah,Hughes,F,2003-07-11,Gatineau,QC,Dust mites,148,57
+36,Benjamin,Turner,M,2003-11-08,Kingston,ON,,182,58
+37,Amelia,Cote,F,1991-04-30,Moncton,NB,,169,72
+38,Amara,Hughes,F,1959-09-28,London,ON,,160,75
+39,Rachel,Lee,F,2012-03-17,Regina,SK,,124,37
+40,Charlotte,Morin,F,2009-09-15,Vancouver,BC,,142,45
+41,Liam,Fraser,M,1997-05-28,Fredericton,NB,,168,67
+42,Antoine,MacDonald,M,2011-09-24,Toronto,ON,,130,39
+43,Daniel,Dubois,M,1983-07-20,Montreal,QC,,175,90
+44,Juliette,Kim,F,1983-03-18,Kingston,ON,Penicillin,166,88
+45,Antoine,Cote,M,1992-09-21,Hamilton,ON,ASA,177,56
+46,Ethan,MacDonald,M,1978-06-22,Hamilton,ON,,186,113
+47,Gabriel,Rossi,M,1945-11-06,London,ON,,171,75
+48,Isabella,Roy,F,1942-11-19,Ottawa,ON,Morphine,166,48
+49,Maya,Moreau,F,1993-12-12,London,ON,Pollen,166,59
+50,Camille,Turner,F,1969-03-28,Quebec City,QC,,164,86
+51,Ava,Li,F,1974-11-15,Hamilton,ON,,162,87
+52,Ryan,Chen,M,1991-10-22,Kelowna,BC,Sulfa,174,84
+53,Rebecca,Murphy,F,1966-08-05,Quebec City,QC,Lactose,161,63
+54,Emily,Nguyen,F,1989-11-17,Gatineau,QC,Penicillin,154,73
+55,Henry,Cote,M,1959-02-06,Red Deer,AB,Pollen,170,99
+56,Dylan,Gauthier,M,1936-01-09,Corner Brook,NL,Codeine,180,86
+57,Isabella,Bouchard,F,1981-10-24,Hamilton,ON,,159,49
+58,Samuel,Stewart,M,1955-10-04,Victoria,BC,Dust mites,191,96
+59,Sarah,Kowalski,F,1957-06-09,Hamilton,ON,Tree nuts,169,79
+60,Adam,Patel,M,2000-09-06,London,ON,,172,86
+61,Naomi,Pelletier,F,2014-06-06,Hamilton,ON,,116,32
+62,Chloe,Roy,F,1950-08-23,Fredericton,NB,,163,46
+63,Liam,Garcia,M,1973-06-27,Laval,QC,,167,74
+64,Emily,Stewart,F,1964-03-23,Quebec City,QC,Lactose,157,79
+65,Jacob,Johnson,M,1993-12-09,Brandon,MB,,164,62
+66,Ethan,Patel,M,1997-03-02,Toronto,ON,,171,91
+67,Omar,Bergeron,M,1983-12-28,Montreal,QC,,181,85
+68,Hannah,Dubois,F,1999-02-17,Hamilton,ON,,156,62
+69,Priya,Scott,F,2014-04-15,Gatineau,QC,Codeine,112,24
+70,David,Cote,M,1954-01-31,Brandon,MB,,169,89
+71,Zoe,Wang,F,1974-07-08,Quebec City,QC,,170,67
+72,Benjamin,Kim,M,1990-10-26,London,ON,Morphine,174,75
+73,Dylan,Taylor,M,1991-11-26,Toronto,ON,,177,73
+74,Laura,Turner,F,1947-05-18,Hamilton,ON,,165,76
+75,Dylan,Li,M,1996-03-09,Montreal,QC,,182,98
+76,Charlotte,Wilson,F,1941-04-20,Kingston,ON,,156,61
+77,Rebecca,Brown,F,2010-02-21,Toronto,ON,Shellfish,137,36
+78,Noah,King,M,2002-07-08,Victoria,BC,,183,49
+79,Naomi,Clark,F,1977-01-17,Laval,QC,Bee stings,160,53
+80,Samuel,Lopez,M,1945-03-15,Montreal,QC,,168,67
+81,Marcus,Young,M,2013-06-09,Kingston,ON,Morphine,126,28
+82,Gabriel,Fortin,M,1949-12-04,Ottawa,ON,,179,84
+83,Wei,Hassan,M,1944-06-24,St. John's,NL,Shellfish,178,71
+84,Felix,Patel,M,1942-08-02,Kingston,ON,Tree nuts,175,117
+85,Gabriel,Sharma,M,1997-04-01,Vancouver,BC,,159,74
+86,Mohamed,Martin,M,1950-02-07,Kingston,ON,,172,71
+87,Sarah,Roy,F,2000-04-14,Quebec City,QC,,155,58
+88,Hugo,Kim,M,1970-04-04,London,ON,,170,80
+89,Chloe,Campbell,F,1985-03-02,Quebec City,QC,,166,96
+90,Gabriel,Roy,M,1946-09-09,Quebec City,QC,,184,89
+91,Hannah,Leblanc,F,1950-10-06,London,ON,Bee stings,160,67
+92,Priya,Novak,F,1942-06-19,Vancouver,BC,Peanuts,162,49
+93,Chloe,Wang,F,1935-12-10,Red Deer,AB,,168,71
+94,Michael,Cote,M,1949-04-11,Vancouver,BC,Penicillin,169,67
+95,Hannah,Okafor,F,1936-10-26,Toronto,ON,,158,69
+96,Lucas,White,M,1974-10-26,Fredericton,NB,,180,60
+97,Sarah,Lopez,F,1971-10-28,Calgary,AB,,151,64
+98,Joseph,Thompson,M,1961-06-02,Laval,QC,Sulfa,173,57
+99,Marcus,Johnson,M,1992-10-28,Gatineau,QC,,171,77
+100,Sofia,Clark,F,2009-10-10,Edmonton,AB,Morphine,137,46
+101,Raj,Khan,M,1996-02-02,Kingston,ON,,181,93
+102,Camille,White,F,1991-06-21,Sydney,NS,,172,54
+103,Fatima,Scott,F,1954-10-15,Laval,QC,,170,77
+104,Dylan,Lavoie,M,2001-08-31,Ottawa,ON,,177,82
+105,Naomi,Mitchell,F,2014-07-04,Toronto,ON,,111,28
+106,Joseph,Hassan,M,2016-06-28,Montreal,QC,Dust mites,100,26
+107,Emma,MacDonald,F,1965-08-29,Montreal,QC,,159,53
+108,Dylan,Joshi,M,1988-04-30,London,ON,,177,90
+109,Dylan,Hughes,M,2002-08-10,London,ON,,158,47
+110,Raj,Kowalski,M,2013-08-31,Iqaluit,NU,Penicillin,118,26
+111,Nora,Mensah,F,2006-10-15,Victoria,BC,Morphine,148,49
+112,David,Ali,M,1941-10-20,Laval,QC,Ibuprofen,167,85
+113,Felix,Anderson,M,1957-09-14,Laval,QC,Shellfish,185,97
+114,Raj,Campbell,M,1981-05-26,Kingston,ON,Latex,174,92
+115,Maya,Young,F,1992-03-22,Kelowna,BC,,166,81
+116,Mia,Ali,F,1973-08-18,London,ON,Pollen,163,53
+117,Fatima,Hughes,F,1978-01-17,Toronto,ON,,169,75
+118,Rebecca,Fraser,F,1945-06-03,Laval,QC,Latex,163,53
+119,William,White,M,2018-11-23,Montreal,QC,,73,13
+120,Nathan,Johnson,M,2012-05-20,Vancouver,BC,,124,30
+121,Marcus,Tremblay,M,2015-08-08,Edmonton,AB,Pollen,112,19
+122,Lily,Ouellet,F,2009-12-27,Kelowna,BC,Eggs,138,41
+123,William,Garcia,M,1972-01-06,Vancouver,BC,Sulfa,179,72
+124,Kwame,Lee,M,2001-06-03,Ottawa,ON,,166,79
+125,Olivia,Sharma,F,2013-06-17,Toronto,ON,,120,27
+126,Adam,Bouchard,M,1959-10-20,Hamilton,ON,,171,76
+127,Hugo,Roy,M,1976-08-16,Winnipeg,MB,Lactose,164,65
+128,Ava,Khan,F,1993-01-07,Edmonton,AB,,159,67
+129,Nathan,Baker,M,1982-12-09,Calgary,AB,,184,98
+130,Charlotte,Moreau,F,1959-01-24,Halifax,NS,Sulfa,150,66
+131,Camille,Roy,F,1960-06-22,Vancouver,BC,,158,100
+132,Juliette,Wilson,F,1993-09-08,Hamilton,ON,Dust mites,165,89
+133,Andrew,Kowalski,M,1971-12-15,Vancouver,BC,Bee stings,172,64
+134,Juliette,Martin,F,1965-09-14,Sydney,NS,,165,63
+135,Liam,Mensah,M,1996-03-14,Gatineau,QC,Pollen,184,98
+136,Andrew,Gagnon,M,1955-03-28,Toronto,ON,Iodine,172,71
+137,Fatima,Anderson,F,1992-08-27,Vancouver,BC,Morphine,165,78
+138,Juliette,Mitchell,F,1973-10-20,Calgary,AB,,164,84
+139,Sarah,Reid,F,1999-01-27,Edmonton,AB,,163,100
+140,Ryan,Anderson,M,2006-12-11,Edmonton,AB,,164,88
+141,Elena,Tremblay,F,1999-08-26,Toronto,ON,Tree nuts,166,63
+142,Sophia,Scott,F,1982-02-16,Montreal,QC,,153,59
+143,Ava,Walker,F,2005-11-26,Edmonton,AB,,155,60
+144,Jessica,Moreau,F,2009-02-20,Kingston,ON,,153,46
+145,Dylan,Johnson,M,1958-11-25,Fredericton,NB,Lactose,172,85
+146,Dylan,Smith,M,2003-05-11,Ottawa,ON,Bee stings,152,82
+147,Liam,Lavoie,M,1974-10-21,Calgary,AB,,176,74
+148,Noah,Ali,M,1952-11-21,Gatineau,QC,,184,96
+149,Omar,Walker,M,1941-12-18,Toronto,ON,Codeine,180,80
+150,Michael,Novak,M,1938-06-29,Vancouver,BC,,181,93
+151,Grace,Khan,F,1974-10-02,Laval,QC,,174,71
+152,Michael,Moreau,M,2006-02-06,Toronto,ON,,176,70
+153,Naomi,Brown,F,1979-10-04,Vancouver,BC,Iodine,160,61
+154,Matthew,Lee,M,1946-07-25,London,ON,Lactose,186,92
+155,Ethan,Mitchell,M,1988-04-28,St. John's,NL,,163,55
+156,Priya,Li,F,1963-03-06,Fredericton,NB,Bee stings,168,79
+157,Abigail,Taylor,F,1963-05-27,Montreal,QC,Sulfa,159,61
+158,Sarah,White,F,2002-03-24,Red Deer,AB,,161,65
+159,Samuel,Smith,M,1999-02-24,Ottawa,ON,Ibuprofen,186,83
+160,Victor,Campbell,M,1976-11-26,Brandon,MB,Penicillin,175,80
+161,Hugo,Murphy,M,1984-10-11,London,ON,,170,82
+162,David,King,M,1965-10-06,London,ON,,180,76
+163,Mohamed,Murphy,M,1947-07-31,Kingston,ON,Eggs,182,81
+164,Samuel,MacDonald,M,1965-12-29,Ottawa,ON,Eggs,169,86
+165,Priya,Thompson,F,1946-05-07,Brandon,MB,Latex,152,61
+166,Ava,Martin,F,1939-09-27,Vancouver,BC,,151,70
+167,Sophia,Bergeron,F,2009-01-21,Vancouver,BC,Lactose,144,42
+168,Charlotte,Fortin,F,1993-10-19,Edmonton,AB,Sulfa,156,73
+169,Sophia,Tremblay,F,1991-04-17,Ottawa,ON,Codeine,166,68
+170,Adam,Walker,M,2009-02-09,Victoria,BC,,149,41
+171,Nathan,Gagnon,M,1982-06-07,Montreal,QC,,179,94
+172,Emily,Young,F,2005-12-07,Sydney,NS,Lactose,153,51
+173,Hailey,Hassan,F,2018-12-30,Ottawa,ON,Eggs,50,9
+174,Jessica,Leblanc,F,2006-02-23,Montreal,QC,,172,68
+175,Carlos,Wang,M,1991-10-05,London,ON,Peanuts,169,82
+176,Amara,Nguyen,F,2015-11-20,Halifax,NS,,105,23
+177,Owen,Mensah,M,1954-09-28,Halifax,NS,Bee stings,177,102
+178,Mia,Smith,F,1988-11-08,Laval,QC,,159,72
+179,Michael,Garcia,M,2010-01-11,Ottawa,ON,,141,44
+180,Emma,Rossi,F,1980-03-14,Hamilton,ON,,158,57
+181,Anna,Murphy,F,2017-11-01,Quebec City,QC,Lactose,90,21
+182,Camille,Bouchard,F,2000-02-18,Montreal,QC,Iodine,171,62
+183,Camille,Cote,F,2006-12-13,Calgary,AB,,172,72
+184,Olivia,Wilson,F,1973-01-25,Victoria,BC,Bee stings,166,69
+185,Oliver,Gauthier,M,1948-10-01,London,ON,,175,94
+186,Juliette,Ouellet,F,1959-05-08,London,ON,,165,92
+187,Grace,Wilson,F,1997-09-09,Brandon,MB,Eggs,152,83
+188,Emily,Bergeron,F,1950-06-15,Quebec City,QC,Penicillin,175,95
+189,Kwame,Walker,M,1972-05-20,Brandon,MB,,179,83
+190,Felix,Lee,M,1945-08-26,Edmonton,AB,Penicillin,180,105
+191,Adam,Taylor,M,1940-01-10,Laval,QC,,171,79
+192,Mohamed,MacDonald,M,1971-04-06,Montreal,QC,,177,98
+193,Maya,Smith,F,1941-05-06,Fredericton,NB,Morphine,168,81
+194,Rebecca,Chen,F,1939-02-16,Victoria,BC,Ibuprofen,171,80
+195,James,Gagnon,M,1956-05-12,Laval,QC,,187,106
+196,Dylan,Walker,M,1976-08-26,Kelowna,BC,,160,67
+197,Sophia,Moreau,F,1941-04-25,Fredericton,NB,,170,83
+198,Sarah,Wang,F,1967-11-20,Quebec City,QC,,167,81
+199,William,Martin,M,1966-07-01,Kingston,ON,,172,107
+200,William,Stewart,M,1990-12-24,Kingston,ON,Penicillin,181,66
