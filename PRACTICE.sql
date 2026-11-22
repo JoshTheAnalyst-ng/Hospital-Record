@@ -70,17 +70,3 @@ SELECT 'Unknown' AS first_name,
 FROM patients p
     RIGHT JOIN admissions a ON p.patient_id = a.patient_id
 WHERE p.patient_id IS NULL;
--- Show only the unmatched records between patients and province_names: patients whose province has no match, and provinces that have no patients. Display first_name, last_name and province_name.
-SELECT p.first_name,
-    p.last_name,
-    pn.province_name
-FROM patients p
-    LEFT JOIN province_names pn ON p.province_id = pn.province_id
-WHERE pn.province_id IS NULL
-UNION ALL
-SELECT p.first_name,
-    p.last_name,
-    pn.province_name
-FROM patients p
-    RIGHT JOIN province_names pn ON p.province_id = pn.province_id
-WHERE p.patient_id IS NULL;
