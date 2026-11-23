@@ -1,72 +1,77 @@
--- PRACTICING JOINS
--- Show each doctor's first_name, last_name and specialty together with the number of admissions they attended. Include only doctors who have attended at least one admission, and sort by that number from highest to lowest.
-SELECT d.first_name,
-    d.last_name,
-    d.specialty,
-    COUNT(*) AS Total_admissions
-FROM doctors d
-    INNER JOIN admissions a ON d.doctor_id = a.attending_doctor_id
-GROUP BY d.doctor_id,
-    d.first_name,
-    d.last_name,
-    d.specialty
-ORDER BY total_admissions DESC;
--- For each province_name, show the number of patients and their average weight. Sort the provinces by average weight from highest to lowest.
-SELECT Province_Name,
-    COUNT(patient_id) AS Patient_No,
-    AVG(weight) AS Average_Weight
+-- show patient's, first_name, last_name, gender and height for female patients (F) taller than 160, tallest first, and show only the first 10.
+SELECT first_name,
+    last_name,
+    gender,
+    height
+FROM patients
+WHERE gender = 'F'
+    AND height > 160
+ORDER BY height DESC
+LIMIT 10;
+-- From admissions, list each different diagnosis once, sorted A to Z.
+SELECT DISTINCT Diagnosis
+FROM admissions
+ORDER BY diagnosis ASC;
+-- From patients, count the patients in each city, named Total_Patients, largest first.
+SELECT City,
+    COUNT(patient_id) AS Total_Patients
+FROM patients
+GROUP BY city
+ORDER BY Total_Patients DESC;
+-- From patients, for each gender show the average height named Avg_Height and the average weight named Avg_Weight, highest Avg_Weight first.
+SELECT Gender,
+    AVG(height) AS Avg_Height,
+    AVG(weight) AS Avg_Weight
+FROM patients
+GROUP by gender
+ORDER BY Avg_Weight DESC;
+-- From admissions, find the 5 attending_doctor_id values with the most admissions, named Total_Admissions.
+SELECT attending_doctor_id,
+    COUNT(*) AS Total_Admissions
+FROM admissions
+GROUP BY attending_doctor_id
+ORDER BY Total_Admissions DESC
+LIMIT 5;
+-- Using patients and province_names, show the number of patients in each province_name, named Total_Patients, largest first.
+SELECT pn.Province_name,
+    COUNT(p.patient_id) AS Total_Patients
 FROM patients AS p
+    LEFT JOIN province_names AS pn ON p.province_id = pn.province_id
+GROUP BY pn.province_name
+ORDER BY Total_Patients DESC;
+-- Using admissions and doctors, show each doctor's first_name, last_name and specialty with the number of admissions they handled, named Total_Admissions, highest first.
+SELECT first_name,
+    last_name,
+    specialty,
+    COUNT(a.patient_id) AS Total_Admissions
+FROM admissions AS a
+    LEFT JOIN doctors AS d ON a.attending_doctor_id = d.doctor_id
+GROUP BY d.doctor_id,
+    first_name,
+    last_name,
+    specialty
+ORDER BY Total_Admissions DESC;
+-- Using admissions, patients and province_names, show the number of admissions for each province_name, named Total_Admissions, highest first
+SELECT Province_name,
+    COUNT(a.patient_id) AS Total_Admissions
+FROM admissions AS a
+    INNER JOIN patients AS p ON a.patient_id = p.patient_id
     INNER JOIN province_names AS pn ON p.province_id = pn.province_id
-GROUP BY province_name
-ORDER BY Average_Weight DESC;
--- Show every patient's first_name, last_name and city with the number of admissions they have had. Patients with no admissions must still appear, with 0. Sort by number of admissions from highest to lowest, then by last_name alphabetically
-SELECT p.First_name,
-    p.Last_name,
-    p.City,
-    COUNT(a.patient_id) AS No_of_Admission
-FROM patients as p
-    LEFT JOIN admissions AS a ON p.patient_id = a.patient_id
-GROUP BY p.First_name,
-    p.Last_name,
-    p.City
-ORDER BY No_of_Admission DESC,
-    p.last_name;
--- Show every doctor's first_name, last_name and specialty with the number of admissions they attended from 2019-01-01 onward. Doctors with no such admissions must still appear, with 0.
-SELECT d.first_name,
-    d.last_name,
-    d.specialty,
-    COUNT(a.attending_doctor_id) AS admissions_from_2019
-FROM doctors AS d
-    LEFT JOIN admissions AS a ON d.doctor_id = a.attending_doctor_id
-    AND a.admission_date >= '2019-01-01'
-GROUP BY d.doctor_id,
-    d.first_name,
-    d.last_name,
-    d.specialty;
--- Show every province_name with the number of patients living there, including provinces that have no patients (show 0). Sort by number of patients from highest to lowest, then by province_name alphabetically.
-SELECT Province_Name,
-    COUNT(patient_id) AS Patients
-FROM patients AS p
-    RIGHT JOIN province_names AS pn ON p.province_id = pn.province_id
-GROUP BY province_name
-ORDER BY Patients DESC,
-    pn.province_name;
--- Show every patient and every admission in one result with the columns first_name, last_name, admission_date and diagnosis. A patient with no admission should show Not admitted as the diagnosis, and an admission with no patient should show Unknown as the first_name.
-SELECT p.first_name,
-    p.last_name,
-    a.admission_date,
-    IF(
-        a.patient_id IS NULL,
-        'Not admitted',
-        a.diagnosis
-    ) AS diagnosis
+GROUP BY Province_name
+ORDER BY Total_Admissions DESC;
+-- Show the patient_id, first_name and last_name of patients who have never been admitted.
+SELECT p.patient_id,
+    first_name,
+    last_name
 FROM patients p
     LEFT JOIN admissions a ON p.patient_id = a.patient_id
-UNION ALL
-SELECT 'Unknown' AS first_name,
-    p.last_name,
-    a.admission_date,
-    a.diagnosis
-FROM patients p
-    RIGHT JOIN admissions a ON p.patient_id = a.patient_id
-WHERE p.patient_id IS NULL;
+WHERE a.patient_id IS NULL;
+-- Using admissions, patients and doctors, for female patients only (F), show each doctor specialty with the number of admissions, named Total_Admissions, highest first
+SELECT specialty,
+    COUNT(a.patient_id) AS Total_Admissions
+FROM admissions a
+    INNER JOIN patients p ON a.patient_id = p.patient_id
+    INNER JOIN doctors d ON a.attending_doctor_id = d.doctor_id
+WHERE gender = 'F'
+GROUP BY specialty
+ORDER BY Total_Admissions DESC
